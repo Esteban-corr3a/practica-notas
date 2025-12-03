@@ -1,18 +1,28 @@
 package com.proteccion;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
 
+        Scanner sc = new Scanner(System.in);
         ValidarNotas validador = new ValidarNotas();
 
-        double n1 = validador.validar(7);
-        double n2 = validador.validar(-1);
-        double n3 = validador.validar(2.9);
+        System.out.print("Ingrese la nota 1: ");
+        double n1 = validador.validar(sc.nextDouble());
+
+        System.out.print("Ingrese la nota 2: ");
+        double n2 = validador.validar(sc.nextDouble());
+
+        System.out.print("Ingrese la nota 3: ");
+        double n3 = validador.validar(sc.nextDouble());
 
         Estudiante estudiante = new Estudiante(n1, n2, n3);
 
         mostrarResultados(estudiante);
+
+        sc.close();
     }
 
     public static void mostrarResultados(Estudiante estudiante) {
