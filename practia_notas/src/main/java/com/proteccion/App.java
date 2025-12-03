@@ -4,7 +4,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        ValidadorNotas validador = new ValidadorNotas();
+        ValidarNotas validador = new ValidarNotas();
 
         double n1 = validador.validar(7);
         double n2 = validador.validar(-1);

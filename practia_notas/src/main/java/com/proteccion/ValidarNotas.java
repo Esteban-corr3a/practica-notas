@@ -1,6 +1,6 @@
 package com.proteccion;
 
-public class ValidadorNotas {
+public class ValidarNotas {
 
     public double validar(double nota) {
 

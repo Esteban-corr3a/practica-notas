@@ -36,8 +36,8 @@ public class Estudiante {
     }
 
     public String tendencia() {
-        if (nota3 > nota2 && nota2 > nota1) return "Tendencia: Mejorando ⬆";
-        if (nota3 < nota2 && nota2 < nota1) return "Tendencia: Empeorando ⬇";
+        if (nota3 > nota2 && nota2 > nota1) return "Tendencia: Mejorando ";
+        if (nota3 < nota2 && nota2 < nota1) return "Tendencia: Empeorando ";
         return "Tendencia: Estable";
     }
 }
