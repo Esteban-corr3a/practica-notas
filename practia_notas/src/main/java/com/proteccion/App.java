@@ -6,7 +6,7 @@ public class App {
 
         ValidadorNotas validador = new ValidadorNotas();
 
-        double n1 = validador.validar(7);     
+        double n1 = validador.validar(7);
         double n2 = validador.validar(-1);
         double n3 = validador.validar(2.9);
 
